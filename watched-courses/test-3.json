@@ -1,0 +1,7 @@
+[
+    ["Course_001"],
+    ["Course_001","Course_002"],
+    ["Course_002","Course_003"],
+    ["Course_001","Course_002","Course_003","Course_004"],
+    ["Course_002","Course_003","Course_001","Course_004"]
+]
