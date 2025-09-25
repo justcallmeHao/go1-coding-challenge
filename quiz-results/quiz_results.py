@@ -5,6 +5,7 @@ class Solution:
         answers = json.load(answers)
         correct = json.load(correct)
 
+        # Counter by index of question
         count = {i: 0 for i in range(len(correct))}
 
         index = range(len(correct))

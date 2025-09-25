@@ -5,12 +5,13 @@ class Solution:
         data = json.load(data)
         visited = set()
         unique = set()
+
         for learner in data:
             current = set(data[learner])
             visit_dup = current.intersection(visited)
             new_visited = current - visit_dup
             visited.update(new_visited)
-
+            # Ensure unique has new courses without repetition
             unique.update(new_visited)
             unique -= visit_dup
         return json.dumps(list(unique))

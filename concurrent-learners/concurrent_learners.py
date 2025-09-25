@@ -13,10 +13,10 @@ class Solution:
 
         if data is None:
             return json.dumps({"The maximum number of concurrent learners is": 0})
-        interval = data[0][1], data[0][2]
 
+        interval = data[0][1], data[0][2] # Overlap window
         for entry in data[1:]:
-            window = entry[1], entry[2]
+            window = entry[1], entry[2] # Current checking range
             # Overlap
             if interval[1] > window[0]:
                 count += 1
